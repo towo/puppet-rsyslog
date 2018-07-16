@@ -178,10 +178,10 @@ class rsyslog::params {
     }
     'Suse': {
       $rsyslog_package_name                = 'rsyslog'
-      $relp_package_name                   = false
-      $mysql_package_name                  = false
-      $pgsql_package_name                  = false
-      $gnutls_package_name                 = false
+      $relp_package_name                   = 'rsyslog-module-relp'
+      $mysql_package_name                  = 'rsyslog-module-mysql'
+      $pgsql_package_name                  = 'rsyslog-module-pgsql'
+      $gnutls_package_name                 = 'rsyslog-module-gtls'
       $package_status                      = 'present'
       $rsyslog_d                           = '/etc/rsyslog.d/'
       $rsyslog_conf                        = '/etc/rsyslog.conf'
