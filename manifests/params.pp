@@ -195,7 +195,7 @@ class rsyslog::params {
       $umask                               = false
       $perm_file                           = '0600'
       $perm_dir                            = '0750'
-      $spool_dir                           = '/var/spool/rsyslog/'
+      $spool_dir                           = '/var/spool/rsyslog'
       $service_name                        = 'syslog'
       $modules                             = [
         '$ModLoad imuxsock # provides support for local system logging',
